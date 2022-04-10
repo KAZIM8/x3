@@ -37,38 +37,40 @@ async def restart(client, m: Message):
 async def help(client, m: Message):
     await m.delete()
     HELP = f"""
-<b> اهلا {m.from_user.mention}!
+<b> (اهلا)[https://telegra.ph/file/efcef3964088a498be4e3.jpg] {m.from_user.mention}!
 
-الاوامر 
-——————×—————
+الاوامر  Bot Music 
 
-⧉ | لتشغيل صوتية في المكالمة أرسل ⇦ [ `{HNDLR}تشغيل  + اسم الاغنية` ]
-⧉ | لتشغيل فيديو في المكالمة  ⇦ [ `{HNDLR}تشغيل_فيديو  + اسم الاغنية` ]
-———————×———————
+التشغيل أغنيه : دز امر ('شغل') + اسم الاغنيه 
+التشغيل فيديو : دز امر ('شغل_فيد') + اسم الاغنيه او المقطع 
+———————————————————
 
-⧉ | لأيقاف الاغنية او الفيديو مؤقتآ  ⇦ [ `{HNDLR}استئناف` ] 
-⧉ | لأعاده تشغيل الاغنية ⇦  [ `{HNDLR}ايقاف_الاستئناف` ]
-⧉ | لأيقاف الاغنية  ⇦ [ `{HNDLR}ايقاف` ] 
-———————×———————
+اذا تريد توقف مؤقت : دز امر ('استئناف')
+اذا تريد توكف الاستئناف : دز امر ('ايقاف_استئناف')
+اذا تريد توكف الاغنيه : دز امر ('اوكف او اسكت')
 
-⧉ | لتحميل صوتية أرسل ⇦ [ `{HNDLR}تحميل + اسم الاغنية او الرابط` ]
-⧉ | لتحميل فيديو  ⇦  [ `{HNDLR}تحميل_فيديو + اسم الاغنية او الرابط` ]
-———————×———————
+———————————————————
 
-⧉ | لأعاده تشغيل التنصيب أرسل ⇦  [ `{HNDLR}ريستارت` ]
-———————×———————
+اذا تريد تحمل اغنيه : دز امر ('حمل '+ اسم الاغنيه)
+اذا تريد فيد : دز امر ('حمل_فيد' او 'نزل فيد )
+
+
+قناة السورس : 
+
 The Channel : @hithon
- The developer : @ytlty"""
+ The developer : @ytlty
+"""
     await m.reply(HELP)
-@Client.on_message(filters.command(["ريبور"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["سورس"], prefixes=f"{HNDLR}"))
 async def repo(client, m: Message):
     await m.delete()
     REPO = f"""
-<b>  اهلا {m.from_user.mention}!
+<b>  (Hi)[https://telegra.ph/file/7156094e1d7b093d32f3a.mp4]  {m.from_user.mention}!
 
-بوت ميوزك هاي ثون 
+ **hithon music boots**
 
 
-@hithon
+The Channel : @hithon
+ The developer : @ytlty
 """
     await m.reply(REPO, disable_web_page_preview=True)
