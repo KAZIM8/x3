@@ -30,7 +30,7 @@ async def restart(client, m: Message):
     await loli.edit("7")
     await loli.edit("8")
     await loli.edit("9")
-    await loli.edit("تم اعاده (.)التشغيل[https://telegra.ph/file/7156094e1d7b093d32f3a.mp4]")
+    await loli.edit("تم اعاده التشغيل[.](https://telegra.ph/file/7156094e1d7b093d32f3a.mp4)")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
 @Client.on_message(filters.command(["اوامر"], prefixes=f"{HNDLR}"))
@@ -39,7 +39,7 @@ async def help(client, m: Message):
     HELP = f"""
 <b> hi {m.from_user.mention}!
 
-الاوامر  [https://telegra.ph/file/a79d35d8d3d4cfae18083.mp4](.)Bot Music 
+الاوامر (https://telegra.ph/file/7156094e1d7b093d32f3a.mp4)[.] Bot Music 
 
 التشغيل أغنيه : دز امر 'شغل' + اسم الاغنيه 
 التشغيل فيديو : دز امر 'شغل_فيد' + اسم الاغنيه او المقطع 
