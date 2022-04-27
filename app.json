@@ -1,11 +1,21 @@
-{    "name": "موسيقى",    "description": "نسخه بيتا https://t.me/hithon.",    "logo": "https://telegra.ph/file/efcef3964088a498be4e3.jpg",    "keywords": [        "Telegram",        "MusicPlayer",        "VideoPlayer"    ],    "repository": "https://github.com/telenothelp/MUSIC",    "env": {        "SESSION": {            "description": " هنا كود السيشن بايرو",            "required": true        },        "API_ID": {            "description": " هنا كود الايبي ايدي",            "required": true        },        "HNDLR": {            "description": " هنا رمز الامر الذي تريده كمثال ( . - ! - / - $ ) ",            "required": false,            "value": "$"        },        "API_HASH": {            "description": " هنا كود الايبي هاش",            "required": true        },        "SUDO_USERS": {            "description": "هنا ايدي حسابك",            "required": true        }    },    "addons": [],    "buildpacks": [        {            "url": "heroku/python"        },        {            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"        }    ],    "formation": {        "worker": {            "quantity": 1,            "size": "free"        }    },    "stack": "container"
-     }
-  }
-}
 
-      "description": "Your MusicPlayer project Name.",
-      "required": false,
-      "value": "DaisyXMusic v4"
+  "name": "music",
+  "logo": "https://telegra.ph/file/733cc4e44a383f9e9f8ce.mp4",
+  "description": "beta sures.",
+  "keywords": ["music", "voicechat", "telegram"],
+  "repository": "https://github.com/kazim8/music",
+  "buildpacks": [
+   {
+     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+   },
+   {
+     "url": "heroku/python"
+   }   
+  ],        
+  "env": {
+    "SESSION": {
+      "description": "هنا بيرجرام",
+      "required": true
     },    
     "API_ID": {
       "description": "App ID from my.telegram.org/apps",
@@ -14,12 +24,48 @@
     "API_HASH": {
       "description": "App hash from my.telegram.org/apps",
       "required": true
-    },
-    "SESSION": {
-      "description": "List of user IDs counted as admin everywhere (separated by space).",
+},    
+    "HNDLR": {
+      "description": "خلي هنا الامر كمثالـ . $ !",
       "required": true
     },
     "SUDO_USERS": {
+      "description": "ايدي حسابك",
+      "required": true
+    },
+    "error": {
+      "description": "Max audio duration limit for downloads (minutes).",
+      "required": true,
+      "value": "400"
+    }
+  }
+}
+
+      "description": "Your MusicPlayer project Name.",
+      "required": false,
+      "value": "flan"
+    },
+    "SESSION": {
+      "description": "بايروجرام",
+      "required": true
+    },
+    "API_ID": {
+     "description": "ايبي ايدي",
+      "required": true
+    },    
+    "API_HASH": {
+      "description": "ايبي هاش",
+      "required": true
+    },     
+    "HNDLR": {
+      "description": "خلي هنا الامر كمثالـ . $ !",
+      "required": true
+    },
+    "SUDO_USERS": {
+      "description": "ايدي حسابك.",
+      "required": true
+    },
+    "erorr": {
       "description": "Max audio duration limit for downloads (minutes).",
       "required": true,
       "value": "10"
