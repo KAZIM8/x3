@@ -39,12 +39,12 @@
       "value": "400"
     }
   }
-
+}
 
       "description": "Your MusicPlayer project Name.",
       "required": false,
       "value": "flan"
-    },
+    }
     "SESSION": {
       "description": "بايروجرام",
       "required": true
