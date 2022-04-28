@@ -33,7 +33,7 @@ async def restart(client, m: Message):
     await loli.edit("خلاص اشتغل[.](https://telegra.ph/file/733cc4e44a383f9e9f8ce.mp4) ")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
-@Client.on_message(filters.command(["م"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["اوامر"], prefixes=f"{HNDLR}"))
 async def help(client, m: Message):
     await m.delete()
     HELP = f"""
