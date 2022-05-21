@@ -1,7 +1,7 @@
 import asyncio
 from pytgcalls import idle
 from config import call_py
-from Hi.flan import arq
+from Hi.التشغيل import arq
 async def main():
     await call_py.start()
     print("""   Bot start ."""    )
