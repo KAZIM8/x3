@@ -2,9 +2,9 @@ from sample_config import Config
 
 
 class Development(Config):
-    APP_ID = 1
-    API_HASH = "c"
-    SESSION = "i"
+    APP_ID = 15313940
+    API_HASH = "04c07e7f06ef2c4e168883fc5b64a445"
+    SESSION = "BACrPqDo0u6WByXi_KYnFQ6VvzhLEP9i3IsDvQcsyThxl6txoeoPpuqm4A8Grk5VpIqv35dpup0pz9tvVE9RX4kgKcyvaN80yTun984Xun0pK3r4setXRxxxVBkIfwWIfG2BfUeWnG3lDV0Prz31MM77Z8ALhsvghF6IdC37tsqf5cKTQ0Ev01Ku2FHBk0adfLP8Qc4SsbrYWk4J59RWNW6104EHMSYJhe1mZ9AKTeGLXsc_yl70bkc4ES6lvue1LBffgHeOSEOMcLNbG2LIXmYXttdzefm_P1K9p972HajC5KCuju1abgBwz7FvhJMYKEepjo7h4pq0VXR0aa3eEbsNAAAAATm-CMYA"
     HNDLR = "."
     SUDO_USERS = [5009120748 5263722694]
 #offub
