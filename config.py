@@ -27,5 +27,5 @@ else:
     grp = False
 
 GRPPLAY = grp
-bot = Client(SESSION, API_ID, API_HASH, plugins=dict(root="AsadAlexaVCBot"))
+bot = Client(SESSION, API_ID, API_HASH, plugins=dict(root="Hi"))
 call_py = PyTgCalls(bot)
