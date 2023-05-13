@@ -1,34 +1,35 @@
 {
-    "name": "MusicUserbot",
-    "description": "MusicUserBot Untuk Memutar Lagu Dan Video Di Obrolan Suara Telegram.",
-    "logo": "",
+    "name": "Asad Alexa Vc Userbot",
+    "description": "A Telegram Userbot To Play Audio And Video Songs in Voice Chat",
+    "logo": "https://telegra.ph/file/7fbaae079e71659672dde.jpg",
     "keywords": [
         "Telegram",
-        "MusicPlayer",
-        "VideoPlayer"
+        "VCBot",
+        "MusicPlayer"
     ],
-    "repository": "https://github.com/RioProjectX/VC-Userbot",
+    "repository": "https://github.com/Lost-In-Dark/TG-MusicPlayer",
     "env": {
         "SESSION": {
-            "description": "Pyrogram String Session",
+            "description": "Pyrogram String Session @Pyrogram_String_Bot",
             "required": true
         },
         "API_ID": {
-            "description": "Masukan APP ID Silahkan Ambil dari my.telegram.org/apps",
+            "description": "my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "my.telegram.org",
             "required": true
         },
         "HNDLR": {
-            "description": "ini akan digunakan sebagai prefix di semua perintah",
-            "required": true,
-            "value": "+"
+            "description": "Handler | Default (/)",
+            "value": "/",
+            "required": false 
         },
-        "API_HASH": {
-            "description": "Masukan API HASH Silahkan Ambil dari my.telegram.org/apps",
-            "required": true
-        },
-        "SUDO_USERS": {
-            "description": "Daftar User ID pengguna dihitung sebagai admin di semua tempat (pemisah menggunakan space)",
-            "required": true
+        "GROUP_MODE": {
+            "description": "Anyone can play, if set to True. Set it to False to restrict play access to Sudo Users/Contacts only",
+            "value": "True",
+            "required": true 
         }
     },
     "addons": [],
@@ -43,7 +44,7 @@
     "formation": {
         "worker": {
             "quantity": 1,
-            "size": "free"
+            "size": "eco"
         }
     },
     "stack": "container"
