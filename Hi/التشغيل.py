@@ -18,13 +18,6 @@ from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
 from pytgcalls.types.input_stream.quality import HighQualityAudio,    HighQualityVideo,    LowQualityVideo,    MediumQualityVideo
 from youtubesearchpython import VideosSearch
 from config import HNDLR, bot, call_py
-from Hi.helpers.queues import QUEUE, add_to_queue, get_queue, clear_queue
-from Hi.helpers.decorators import authorized_users_only
-from Hi.helpers.handlers import skip_current_song, skip_item
-from pyrogram.errors import FloodWait, MessageNotModified
-from youtubesearchpython import SearchVideos
-from yt_dlp import YoutubeDL
-from Hi.helpers.merrors import capture_err
 ARQ_API_KEY = "QFOTZM-GSZUFY-CHGHRX-TDEHOZ-ARQ"
 aiohttpsession = aiohttp.ClientSession()
 arq = ARQ("https://thearq.tech", ARQ_API_KEY, aiohttpsession)
