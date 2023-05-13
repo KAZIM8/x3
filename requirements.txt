@@ -1,7 +1,12 @@
 TgCrypto
 pyrogram==1.4.16
 py-tgcalls==0.8.1
+requests
+aiohttp
+aiofiles
 asyncio
+wget
+python-arq
 youtube-search-python
 yt-dlp
 python-dotenv
