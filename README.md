@@ -14,7 +14,7 @@ It's made with [PyTgCalls](https://github.com/kazim8/x3) and [Pyrogram](https://
 ## Deployment
 
 ### Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://github.com/kazim8/x)
+[![Deploy](https://github.com/kazim8/x3))](https://www.herokucdn.com/deploy)
 
 ### Local Deploy
 ```
