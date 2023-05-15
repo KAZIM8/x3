@@ -1,9 +1,10 @@
 TgCrypto
-pyrogram==1.4.16
-py-tgcalls==0.8.2
+pyrogram==1.4.16 
+py-tgcalls==0.8.5
 requests
 aiohttp
 aiofiles
+pillow
 asyncio
 wget
 python-arq
@@ -12,4 +13,3 @@ yt-dlp
 python-dotenv
 gTTS
 googletrans==4.0.0rc1
-python-dotenv
