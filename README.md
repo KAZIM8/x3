@@ -2,7 +2,7 @@
 
 A Telegram Userbot to play or streaming Audio and Video songs / files in Telegram Voice Chats.
 
-It's made with [PyTgCalls](https://github.com/pytgcalls/pytgcalls) and [Pyrogram](https://github.com/pyrogram/pyrogram)
+It's made with [PyTgCalls](https://github.com/kazim8/x3) and [Pyrogram](https://github.com/kazim8/x3)
 
 
 ## Requirements
