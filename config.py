@@ -1,18 +1,17 @@
 import os
+
 from dotenv import load_dotenv
 from pyrogram import Client, filters
 from pytgcalls import PyTgCalls
 
-# For Local Deploy
 if os.path.exists(".env"):
     load_dotenv(".env")
 
-# Necessary Vars
-API_ID = int(os.getenv("API_ID", "6"))
-API_HASH = os.getenv("API_HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")
+API_ID = int(os.getenv("API_ID"))
+API_HASH = os.getenv("API_HASH")
 SESSION = os.getenv("SESSION")
-HNDLR = os.getenv("HNDLR", "/")
-GROUP_MODE = os.getenv("GROUP_MODE", "True")
+HNDLR = os.getenv("HNDLR", "!")
+SUDO_USERS = list(map(int, os.getenv("SUDO_USERS").split()))
 
 
 contact_filter = filters.create(
@@ -20,12 +19,5 @@ contact_filter = filters.create(
     or message.outgoing
 )
 
-
-if GROUP_MODE == ("True" or "true"):
-    grp = True
-else:
-    grp = False
-
-GRPPLAY = grp
-bot = Client(SESSION, API_ID, API_HASH, plugins=dict(root="AsadAlexaVCBot"))
+bot = Client(SESSION, API_ID, API_HASH, plugins=dict(root="Musicjmthon"))
 call_py = PyTgCalls(bot)
